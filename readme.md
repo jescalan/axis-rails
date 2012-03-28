@@ -5,7 +5,7 @@ This gem can be used to bootstrap your rails app with the roots sass framework, 
 
 ### Setup
 
-To add roots to your application, just add `gem 'roots'` under the assets group in your Gemfile. Make sure that you also add `gem 'haml'` if you have not already, as the roots layout files are haml (could be ported to erb as well if there's demand). Then run `bundle` and the framework will be available to you using `@import roots`.
+To add roots to your application, just add `gem 'roots-rails'` under the assets group in your Gemfile. Make sure that you also add `gem 'haml'` if you have not already, as the roots layout files are haml (could be ported to erb as well if there's demand). Then run `bundle` and the framework will be available to you using `@import roots`.
 
 It is **strongly recommended** that you use the roots install generator as well, which sets up the layout, images, icons, and older browser fixes.
 
