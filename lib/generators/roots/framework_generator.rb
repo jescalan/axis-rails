@@ -10,7 +10,8 @@ module Roots
           remove_file "app/assets/stylesheets/application.css"
           copy_file "layouts/application.sass", "app/assets/stylesheets/application.sass"
           directory "sass", "app/assets/stylesheets"
-        end
+        end 
+        say "\nComplete! Make sure to visit application.sass to configure.\n\n", "\e[32m"
       end
 
     end

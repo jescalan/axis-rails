@@ -12,7 +12,7 @@ module Roots
       end
 
       def replace_application_css
-        remove_file "app/assets/stylesheet/application.css"
+        remove_file "app/assets/stylesheets/application.css"
         copy_file "layouts/application.sass", "app/assets/stylesheets/application.sass"
       end
 
@@ -28,6 +28,7 @@ module Roots
       def remove_defaults
         remove_file "app/assets/rails.png"
         remove_file "public/index.html"
+        say "\nComplete! Make sure to visit these two files to configure things: \n  - app/views/layouts/config.html.haml\n  - app/assets/stylesheets/application.sass\n\n", "\e[32m"
       end
 
     end

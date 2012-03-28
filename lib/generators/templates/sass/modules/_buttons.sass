@@ -20,7 +20,7 @@
   background-image: -ms-linear-gradient(top, $color1 0%, $color2 100%)
   background-image: linear-gradient(top, $color1 0%, $color2 100%)
   -pie-background: linear-gradient(top, $color1 0%, $color2 100%)
-  behavior: url(vendor/pie.htc)
+  behavior: asset-url('pie.htc', javascript)
 
 // Mixin: Simple Gradient
 // Takes one color and an optional strength. Darkens and lightens the color according to the strength
@@ -47,7 +47,7 @@
   background: url(../img/noise.png) repeat, $color2 -ms-linear-gradient(top, $color1 0%, $color2 100%) repeat-x
   background: url(../img/noise.png) repeat, $color2 linear-gradient(top, $color1 0%, $color2 100%) repeat-x
   -pie-background: url(../img/noise.png) repeat, $color2 linear-gradient(top, $color1 0%, $color2 100%) repeat-x
-  behavior: url(vendor/pie.htc)
+  behavior: asset-url('pie.htc', javascript)
 
 // Mixin: Simple Noise Gradient
 // Exactly like simple gradient, but overlays a very light noise to give it more texture.
