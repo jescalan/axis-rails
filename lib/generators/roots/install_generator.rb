@@ -18,7 +18,7 @@ module Roots
 
       def install_dependencies
         copy_file "scripts/selectivizr.js", "vendor/assets/javascripts/selectivizr.js"
-        copy_file "scripts/pie.htc", "vendor/assets/javascripts/pie.htc" # asset-url('pie.htc', javascript)
+        copy_file "scripts/pie.htc", "vendor/assets/javascripts/pie.htc"
         remove_file "public/favicon.ico"
         copy_file "favicon.ico", "public/favicon.ico"
         directory "images", "public/roots"
