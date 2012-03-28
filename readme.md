@@ -11,7 +11,7 @@ It is **strongly recommended** that you use the roots install generator as well,
 
 ### Generators
 
-Situation: you just made a new rails application and you want to bootstrap it with roots. We've got a generator for that. Just hit the command below, which will replace the default layout, generate the sass framework in your asset pipeline, and remove `public/index.html`, giving you a little boost forwardin your dev cycle.
+Situation: you just made a new rails application and you want to bootstrap it with roots. We've got a generator for that. Just hit the command below, which will replace the default layout, remove the default rails assets, and add in roots' sass framework, layouts, icons, and legacy browser fixes.
 
     rails g roots:install
 
