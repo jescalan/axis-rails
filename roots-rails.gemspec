@@ -4,13 +4,13 @@ $:.push File.expand_path("../lib", __FILE__)
 require "roots/version"
 
 Gem::Specification.new do |s|
-  s.name        = "roots"
+  s.name        = "roots-rails"
   s.version     = Roots::VERSION
   s.authors     = ["Jeff Escalante"]
   s.email       = ["jeff.escalante@carrotcreative.com"]
   s.homepage    = "http://roots.carrotbeta.com"
-  s.summary     = %q{Injects roots sass framework and dynamic layouts into your rails app}
-  s.description = %q{Injects roots sass framework and dynamic layouts into your rails app}
+  s.summary     = %q{Injects roots sass framework, layouts, and assets into your rails app}
+  s.description = %q{Injects roots sass framework, layouts, and assets into your rails app}
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
