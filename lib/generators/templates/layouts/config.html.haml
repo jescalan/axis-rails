@@ -9,13 +9,12 @@
 - author = "Your name or company name"
 - description = "Short description of your site"
 - url = "http://example.com"
-- preview_image = "img/preview.png" # 75x75 square. if you really can't, pass false
+- preview_image = "/roots/preview.png" # 75x75 square. if you really can't, pass false
 
 - favicons = true # see section below for size details
 - facebook_tags = true
 - mobile_site = false
 - ie_app = true
-- iconic = false # vector icon font, super useful
 
 -# -----------------------------------------------------
 
@@ -23,21 +22,15 @@
 %meta{ :name => 'description', :content => "#{description}" }
 %meta{ :name => 'author', :content => "#{author}"  }
 
--# The main stylesheet url
-%link{ :rel => 'stylesheet', :href => 'css/main.css'}
-
-- if iconic
-  %link{ rel: 'stylesheet', href: 'css/fonts/iconic.css' }
-
 - if favicons
   -# 16x16, .ico
-  %link{ :rel => "shortcut icon", :href => "images/favicon.ico" }
+  %link{ :rel => "shortcut icon", :href => "/favicon.ico" }
   -# 57x57, .png
-  %link{ :rel => "apple-touch-icon", :href => "images/apple-touch-icon.png" }
+  %link{ :rel => "apple-touch-icon", :href => "/roots/apple-touch-icon.png" }
   -# 72x72, .png
-  %link{ :rel => "apple-touch-icon", :sizes => "72x72", :href => "images/apple-touch-icon-72x72.png" }
+  %link{ :rel => "apple-touch-icon", :sizes => "72x72", :href => "/roots/apple-touch-icon-72x72.png" }
   -# 114x114, .png
-  %link{ :rel => "apple-touch-icon", :sizes => "114x114", :href => "images/apple-touch-icon-114x114.png" }
+  %link{ :rel => "apple-touch-icon", :sizes => "114x114", :href => "/roots/apple-touch-icon-114x114.png" }
 
 - if facebook_tags
   %meta{ property: 'og:title', content: "#{title}"}

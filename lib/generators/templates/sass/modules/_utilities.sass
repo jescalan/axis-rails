@@ -43,7 +43,8 @@
 
 =box-shadow($params)
   +prefix(box-shadow, unquote($params))
-  behavior: url(vendor/pie.htc)
+  color: red
+  behavior: asset-url('testing.htc', javascript)
 
 // Mixin: Opacity
 // I know, it seems silly. But every time you go to IE testing you will be thanking yourself for
