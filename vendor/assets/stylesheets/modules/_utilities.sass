@@ -186,7 +186,7 @@
     +bg(unquote($img-path))
   @if type-of($dimensions) == list
     width: nth($dimensions, 1)
-    height: nth($dimensions, 3)
+    height: nth($dimensions, 2)
   @else if $dimensions == false
     // all is well
   @else
