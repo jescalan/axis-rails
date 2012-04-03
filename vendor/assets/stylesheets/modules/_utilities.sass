@@ -107,7 +107,7 @@
 // ex. +bg(../img/other.jpg, center center, repeat)
 
 =bg($path, $position: unquote(""), $repeat: no-repeat)
-  background: url(unquote($path)) $position $repeat
+  background: image-url(quote(unquote($path))) $position $repeat
 
 // Mixin: Bold
 // It's just faster to type +bold than font-weight: bold
