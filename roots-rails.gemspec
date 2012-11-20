@@ -9,20 +9,12 @@ Gem::Specification.new do |s|
   s.authors     = ["Jeff Escalante"]
   s.email       = ["jeff.escalante@carrotcreative.com"]
   s.homepage    = "http://roots.carrotbeta.com"
-  s.summary     = %q{Injects roots sass framework, layouts, and assets into your rails app}
-  s.description = %q{Injects roots sass framework, layouts, and assets into your rails app}
+  s.summary     = %q{Injects roots css framework, layouts, and assets into your rails app}
+  s.description = %q{Injects roots css framework, layouts, and assets into your rails app}
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
-
-  # testing
-  s.add_development_dependency "rspec"
-
-  # dependencies
-  s.add_dependency('haml')
-  s.add_dependency('coffee-script')
-  s.add_dependency('rdiscount')
 
 end

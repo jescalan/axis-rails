@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title your page title
+    meta name='description' content='description of the site'
+    meta name='author' content='author of the site'
+
+    meta property='og:title' content='title'
+    meta property='og:description' content='description'
+    meta property='og:image' content='preview.jpg'
+    meta property='og:url' content='http://example.com'
+    meta property='og:type' content='website'
+
+    = stylesheet_link_tag 'application'
+    = csrf_meta_tags
+
+    / uncomment if this is a mobile site
+    / meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'
+
+  body
+    = yield
+
+  /[if (gte IE6)&(lte IE8)]
+    = javascript_include_tag 'selectivizr.js'
+
+  = javascript_include_tag 'application'
