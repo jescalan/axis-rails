@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.version     = Roots::VERSION
   s.authors     = ["Jeff Escalante"]
   s.email       = ["jeff.escalante@carrotcreative.com"]
-  s.homepage    = "http://roots.carrotbeta.com"
+  s.homepage    = "http://roots.jenius.me"
   s.summary     = %q{Injects roots css framework, layouts, and assets into your rails app}
   s.description = %q{Injects roots css framework, layouts, and assets into your rails app}
 
