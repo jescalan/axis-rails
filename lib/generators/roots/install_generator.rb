@@ -16,12 +16,12 @@ module Roots
       end
 
       def install_dependencies
-        copy_file "scripts/selectivizr.js", "vendor/assets/javascripts/selectivizr.js"
-        copy_file "scripts/pie.htc", "vendor/assets/javascripts/pie.htc"
+        empty_directory 'public/js'
+        empty_directory 'public/img'
+        copy_file "pie.htc", "public/js/pie.htc"
         remove_file "public/favicon.ico"
         copy_file "favicon.ico", "public/favicon.ico"
-        directory "images", "public/roots"
-        copy_file "noise.png", "app/assets/images/noise.png"
+        copy_file "noise.png", "public/img/noise.png"
       end
 
       def add_gems
