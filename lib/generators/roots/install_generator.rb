@@ -39,7 +39,7 @@ module Roots
 
       def add_stylus_initializer
         create_file 'config/initializers/roots.rb'
-        append_file 'config/initializers/roots.rb', "Stylus.use 'roots-css'"
+        append_file 'config/initializers/roots.rb', "Stylus.use('roots-css') if defined?(Stylus)"
       end
 
       def remove_defaults_and_complete
