@@ -3,6 +3,8 @@ Roots Rails
 
 This gem adds [roots-css](https://github.com/jenius/roots-css) to your rails app, and adds support for the more concise and jade-like [slim](http://slim-lang.com/).
 
+**NOTE:** Because of an open issue in ruby-stylus, the using the asset pipeline in rails stylus code is currently not supported. Looking into fixing this is fairly high on my prioirities list, let me know if you want to get involved.
+
 ### Installation
 
 - Add `gem 'roots-rails'` to your gemfile.
