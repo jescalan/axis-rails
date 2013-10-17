@@ -1,7 +1,7 @@
-module Roots
+module Axis
   module Generators
     class InstallGenerator < Rails::Generators::Base
-      desc "Installs the roots-rails system"
+      desc "Installs the axis-rails system"
       source_root File.expand_path('../../templates', __FILE__)
 
       def replace_layout
@@ -26,7 +26,7 @@ module Roots
 
       def add_gems
         append_to_file "Gemfile", "\ngem 'slim'"
-        append_to_file "Gemfile", "\ngem 'stylus', group: :assets"
+        append_to_file "Gemfile", "\ngem 'stylus', git: 'git@github.com:lucasmazza/ruby-stylus.git', group: :assets"
         run 'bundle'
       end
 
@@ -34,12 +34,12 @@ module Roots
       # this dependency on node (https://github.com/railsjedi/ruby-stylus-source/blob/master/Rakefile#L23)
       def install_roots_css_library
         empty_directory 'node_modules'
-        run 'npm install roots-css'
+        run 'npm install axis-css'
       end
 
       def add_stylus_initializer
-        create_file 'config/initializers/roots.rb'
-        append_file 'config/initializers/roots.rb', "Stylus.use('roots-css') if defined?(Stylus)"
+        create_file 'config/initializers/axis.rb'
+        append_file 'config/initializers/axis.rb', "Stylus.use('axis-css') if defined?(Stylus)"
       end
 
       def remove_defaults_and_complete
